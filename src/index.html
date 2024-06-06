@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/output.css">
   <title>Tela de Login Tailwind</title>
 </head>
-<body>
-  <h1 class="bg-red-600 text-blue-500">Olá mundo Tailwind</h1>
+
+<body class="bg-slate-200">
+  <main class="w-full h-screen flex items-center justify-center">
+    <section class="w-full flex1 p-4 max-w-xl">
+      <div class="flex flex-col items-center gap-4 mb-10">
+        <img class="max-w-32 w-full hover:scale-110 duration-200" src="./assets/user.png" alt="imagem do usuário">
+        <h1 class="font-bold text-3xl lg:text-5xl">Login</h1>
+      </div>
+      <form class="flex w-full flex-col gap-4">
+        <input class="rounded-lg p-2 bg-slate-100 focus:bg-white focus:outline-none" type="email" id="email"
+          placeholder="Digite seu Email">
+        <input class="rounded-lg p-2 bg-slate-100 focus:bg-white focus:outline-none" type="password" id="senha"
+          placeholder="*****">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <input type="checkbox" id="lembrar">
+            <label class="cursor-pointer" for="lembrar">Lembrar Senha</label>
+          </div>
+          <a class="font-medium text-blue-600 hover:text-blue-500 duration-200" href="#">Esqueceu sua senha?</a>
+        </div>
+        <button class="bg-blue-500 p-2 font-bold rounded-lg text-white hover:bg-blue-600 duration-300 mb-6">Acessar</button>
+      </form>
+      <p class="font-medium text-center">Não possui uma conta?
+        <a class="font-medium text-blue-600 hover:text-blue-500 duration-200" href="#">Criar uma conta</a>
+      </p>
+    </section>
+    <section class="w-full flex1 bg-blue-500 max-w-lg">Item Direita</section>
+  </main>
 </body>
+
 </html>
